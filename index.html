@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>SENAI - Página Inicial</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonte -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="logo">SENAI</div>
+  <div class="icons">
+    ☰
+    👤
+    <button id="themeToggle">🌙</button>
+  </div>
+
+
+  
+</div>
+
+</header>
+
+<main>
+  <h1>SENAI - GPT</h1>
+
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="O que você deseja aprender hoje?">
+    <button class="search-btn" onclick="buscar()">➤</button>
+  </div>
+
+  <div class="tags">
+    <div class="tag" onclick="setTag('Cursos Técnicos')">Cursos Técnicos</div>
+    <div class="tag" onclick="setTag('Inovação Industrial')">Inovação Industrial</div>
+    <div class="tag" onclick="setTag('Graduação')">Graduação</div>
+    <div class="tag" onclick="setTag('EAD')">EAD</div>
+  </div>
+
+  <div class="center-logo">⚙ SENAI</div>
+</main>
+
+<footer>
+  <div>
+    <a href="#">Sobre</a>
+    <a href="#">Termos</a>
+    <a href="#">Privacidade</a>
+  </div>
+  <div>Copyright 2026 © Todos os direitos reservados.</div>
+</footer>
+
+<!-- JS externo -->
+<script src="script.js"></script>
+
+</body>
+</html>
