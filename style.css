@@ -125,8 +125,6 @@ footer a:hover {
 }
 
 
-
-
 /* TRANSIÇÃO GLOBAL SUAVE */
 * {
   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
@@ -219,3 +217,68 @@ footer {
   transform: rotate(20deg) scale(1.1);
   box-shadow: 0 0 8px rgba(255,255,255,0.2);
 }
+
+/* CONTAINER DO CHAT */
+.chat-container {
+  width: 500px;
+  max-height: 400px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 15px;
+  overflow-y: auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin-top: 10px;
+}
+
+/* escondido inicialmente */
+.hidden {
+  display: none;
+}
+
+/* MENSAGENS */
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* BOLHAS */
+.message {
+  padding: 10px 14px;
+  border-radius: 12px;
+  max-width: 80%;
+  font-size: 14px;
+}
+
+/* USUÁRIO */
+.user {
+  align-self: flex-end;
+  background: var(--primary);
+  color: white;
+}
+
+/* BOT */
+.bot {
+  align-self: flex-start;
+  background: var(--tag-bg);
+  color: var(--text);
+}
+
+/* animação leve */
+.message {
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
